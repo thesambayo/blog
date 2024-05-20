@@ -4,7 +4,7 @@ author: Samuel Adebayo
 pubDatetime: 2023-12-20T16:48:30.000+01:00
 slug: javascript-pass-by-value-pass-by-reference
 featured: false
-draft: false
+draft: true
 tags:
   - javascript
   - JS

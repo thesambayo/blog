@@ -4,7 +4,7 @@ author: Samuel Adebayo
 pubDatetime: 2024-01-08T06:55:12.000+01:00
 slug: pull-changes-from-another-repository
 featured: false
-draft: false
+draft: true
 tags:
   - git
 description: "Pull changes or updates from another Git remote repository"

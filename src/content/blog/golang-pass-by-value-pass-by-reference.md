@@ -4,7 +4,7 @@ author: Samuel Adebayo
 pubDatetime: 2024-01-01T06:55:12.000+01:00
 slug: golang-pass-by-value-pass-by-reference
 featured: false
-draft: false
+draft: true
 tags:
   - golang
   - go
@@ -13,7 +13,7 @@ tags:
 description: "How arguments are received and updated in Golang functions."
 ---
 
-> This article is still under construction, hence not complete.
+> Disclaimer: There is no pass by reference in Golang
 
 When a function is called, arguments can be passed into the function is two ways, either **Pass-by-value** or **Pass-by-reference**.
 The manner in which a argument are passed into functions are determined by its data type. [Primitive data types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) such as `boolean`, `number`, `null`, `string` and `undefined` are passed by value while [Non-primtive data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects) such as `arrays`, `functions` and `objects` are passed by reference.
