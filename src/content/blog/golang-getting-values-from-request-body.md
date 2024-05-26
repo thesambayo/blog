@@ -13,7 +13,6 @@ description: "How to retrieve form values from request body"
 
 Getting values from request body in Golang
 
-
 Consider the mini application setup:
 
 ```go
@@ -40,20 +39,19 @@ func createPost() http.HandlerFunc {
         // handle error
 
         // then you can use request.PostForm.Get("title")... to retrieve data from the form map
-        // the Get method always returns a string, so you will have to do a manaul type conversion to get the value into other types
-
-
+        // the Get method always returns a string, so you will have to do a manual type conversion to get the value into other types
     }
 }
 ```
 
-There are methods such as  request.FormValue() and .PostFormValue(). They are shortcuts that calls ParseForm() and retrieve values for you, but they silently ignore any errors returned by ParseForm(). Not ideal and definitely not recommended.
+There are methods such as request.FormValue() and .PostFormValue(). They are shortcuts that calls ParseForm() and retrieve values for you, but they silently ignore any errors returned by ParseForm(). Not ideal and definitely not recommended.
 
 For UI form fields with multiple values such as checkboxes;
+
 ```html
-<input type="checkbox" name="items" value="foo"> Foo
-<input type="checkbox" name="items" value="bar"> Bar
-<input type="checkbox" name="items" value="baz"> Baz
+<input type="checkbox" name="items" value="foo" /> Foo
+<input type="checkbox" name="items" value="bar" /> Bar
+<input type="checkbox" name="items" value="baz" /> Baz
 ```
 
 Using request.PostForm.Get() will return only the first value for the field (which it does for other fields tbh, but those fields only contain one value).
@@ -62,5 +60,5 @@ So will we use request.PostForm[‘items’] which will give us a []string slice
 ```go
 for i, item := range r.PostForm["items"] {
     fmt.Fprintf(w, "%d: Item %s\n", i, item)
-} 
+}
 ```

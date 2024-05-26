@@ -25,7 +25,7 @@ This table that contains the topics I'm learning and aspects of these topics I h
 
 | Topics								| Aspects													|
 | --------------------- | ------------------------------- |
-| Data structures 			| Linked lists, Queues, Stacks 		|
+| Data structures 			| [Linked lists](/posts/what-is-the-linked-lists-data-structure), Queues, Stacks 		|
 | Sorting algorithms 		| Bubble sort 										|
 | Searching algorithms 	| Linear search, Binary search (2 crystal problem) |
 
