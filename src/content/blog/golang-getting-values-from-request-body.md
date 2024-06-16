@@ -4,10 +4,9 @@ author: Samuel Adebayo
 pubDatetime: 2024-01-01T06:55:12.000+01:00
 slug: golang-getting-values-from-request-body
 featured: false
-draft: true
+draft: false
 tags:
   - golang
-  - go
 description: "How to retrieve form values from request body"
 ---
 
@@ -22,9 +21,9 @@ import (
 	"net/http"
 )
 
+
 func main() {
     mux := http.NewServeMux()
-
     mux.HandleFunc("POST /posts", createPost)
     // correct this: err := server.ListenAndServe()
     // blahblah
