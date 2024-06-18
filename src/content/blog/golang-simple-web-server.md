@@ -1,7 +1,8 @@
 ---
-title: "Golang: Getting started with a simple web server"
+title: "Getting started with a simple web server in Go"
 author: Samuel Adebayo
-pubDatetime: 2024-05-06T16:32:20.000+01:00
+pubDatetime: 2024-04-06T16:32:20.000+01:00
+modDatetime: 2024-05-06T16:32:20.000+01:00
 slug: golang-simple-web-server
 featured: false
 draft: false
@@ -62,12 +63,16 @@ func main() {
 }
 ```
 
+> This server is not a server that reloads after file changes. You will need to stop and restart the server manually. To start the server, run `go run main.go` in the terminal.
+
 ## Handling requests with handler functions
 
 Handler functions process incoming HTTP requests, executing your application logic and writing appropriate HTTP response bodies and headers.
 
 In Golang, a handler function is any function that has the signature `func(http.ResponseWriter, *http.Request)`.
-The `http.ResponseWriter` is used to write the response back to the client, and the `*http.Request` is a pointer to a struct that holds information about the incoming request like the URL, headers, and body.
+
+- The `http.ResponseWriter` is used to write the response back to the client.
+- The `*http.Request` is a pointer to a struct that holds information about the incoming request like the URL, headers, and body.
 
 `mux.HandleFunc()` is used to register a handler function for a specific URL path and request method. It takes two arguments:
 
@@ -199,7 +204,10 @@ So a URL pattern like `POST /` will match only the POST method and URL path `/` 
 
 For exact URL path matching, you end the URL with a `{$}` like `GET /{$}`. This will match only the URL path `/` with a GET method and not `/` with other methods, `/foo`, `/bar`, etc.
 
-So a URL pattern like `GET /foo/{$}` will match only the URL path `/foo` and not `/foo/2`, `/foo/bar`, `/foo/baz`, etc.
+So a URL pattern like `GET /foo/{$}` will match only the URL path `/foo/` and not `/foo/2`, `/foo/bar`, `/foo/baz`, etc.
+A URL pattern like `GET /foo` will match only the URL path `/foo`.
+
+Not that `GET /foo` is quite different from `GET /foo/{$}` because of the ending `/`.
 
 ---
 
@@ -236,5 +244,7 @@ func main() {
 ---
 
 Note: if two patterns overlap in the requests, the more specific pattern will take precedence.
+
+> For live reloads, you can use a tool like [Air](https://github.com/air-verse/air#installation)
 
 Happy coding!
