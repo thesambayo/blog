@@ -37,7 +37,7 @@ Here are the tools and resources I rely on to stay productive and inspired:
 
 **Hardware**: MacBook M3 Pro, Samsung Monitor 32", Logitech keyboard.
 
-**Editors**: Neovim, Zed, VS Code (for Angular).
+**Editors**: Neovim, VS Code (for Angular).
 
 **Font**: Geist Mono.
 
