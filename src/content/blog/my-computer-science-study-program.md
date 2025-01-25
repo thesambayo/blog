@@ -13,7 +13,7 @@ tags:
 description: "How I've been personally studying stuff about Computer science"
 ---
 
-> After 5 years of being a web developer, I began a journey to learn everything I can about computer science. First, a bit of background story:
+> After 3 years of being a software developer, I began a journey to learn everything I can about computer science. First, a bit of background story:
 
 My first introduction to writing computer programs was during my second year at university in 2016, where I was pursuing a degree in Chemistry. I took a course called `CSC231 Scientific Programming`, which introduced me to the rudiments of computer programming. The course was taught using the languages FORTRAN and MATLAB. However, I was barely interested, as I didn't have a computer to work with. Consequently, I only did what was necessary to pass the course, which I did with a score in the 81st percentile. After that, I lost interest, believing that FORTRAN and MATLAB would never be useful to me.
 
@@ -21,7 +21,7 @@ My next encounter with programming came a year later when I saw my roommate play
 
 I took a pause to focus on my exams, after which I returned home. This hiatus took about 4 months before I returned to the university where I had access to a computer again. The starts and stops continued into the next year, where I could finish two programs at Andela learning community. I learned Angular at one of the programs and got really good at it.
 
-![One of my two ALC program certificates](https://media.licdn.com/dms/image/C562DAQEsUF7QjKFtMQ/profile-treasury-image-shrink_800_800/0/1602537817195?e=1716724800&v=beta&t=SlznknDHpLHL9chSbA1rbtN5EnRiPUDd_kCOih5YacE)
+[One of my two ALC program certificates](https://drive.google.com/file/d/1FbWwkF0-dJD6zbSYD6hygRKyPMzbO8_J/view?usp=sharing)
 
 After graduating in 2019, I got an internship at an Edutech company and thus began my journey in professional programming. From my background, you would realize I never got introduced to the basics of computer programming. I never even heard of Big O notation until 2020, a year after my first job. I did good jobs as a web developer, but I still felt I was lacking a lot. I could not relate to many technical terms and paradigms. After some deliberations, I enrolled in the TalentQL pipeline bootcamp to learn more and be on my way to becoming a true software engineer. While I learned a good deal at the bootcamp about how to start, architect, and finish projects, market myself, and even got a better job at the end, I did not learn what makes up computer programming—data structures, sorting and searching algorithms, design patterns, etc.
 
@@ -34,7 +34,7 @@ After further introspection, I made the following decisions:
 
 - I will follow this [computer science study roadmap](https://roadmap.sh/computer-science) as closely as possible to guide me.
 - I want to choose another programming language to begin my journey with, and I have chosen Golang.
-- I will document everything I learn by writing about it.
+- I will [document everything](/posts/documenting-everything-learnt-in-computer-science-self-study/) I learn by writing about it.
 - I will build as many projects as I can with what I learn.
 - I will strive to move towards backend programming.
 

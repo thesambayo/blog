@@ -3,48 +3,42 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-With extensive expertise in frontend technologies such as Angular, Vue, and TypeScript, as well as backend technologies including Node.js and NestJS, I have had the priviledge to contribute significantly to various projects.
+<div class="flex gap-4 items-center">
+  <img src="/assets/profile-picture.png" class="sm:size-[250px] rounded backdrop-grayscale" alt="profile image" />
+  <div class="flex flex-col text-fill">
+    <h2 class="mt-0">Hi, I am Samuel Adebayo</h2>
+    <h4>I'm a Full-Stack Software Engineer with a passion for building scalable, user-friendly web applications and writing clean, maintainable code.</h4>
+    <!-- <h4>Writing TypeScript (React, Angular, NodeJS), Golang and CSS.</h4> -->
+  </div>
+</div>
 
-Spending my time being a [founding engineer](https://www.ralipo.com/) at the moment.
+I am also one of the two Golang Community Leader for Toptal, where I foster collaboration, share knowledge, and support developers in mastering Golang.
 
-<!-- AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+When I'm not on the job, I enjoy reading, blogging about programming, contributing to open-source projects, watching football, and spending time with my wife watching movies.
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div> -->
-
-## Tech Stack
-
-- JavaScript (TypeScript, Vue, Angular)
-- CSS, SCSS, TailwindCSS
-- Node.js (NestJS)
+### Tech Stack
+- CSS (SCSS, TailwindCSS)
 - Golang
-- PostgreSQL
+- JavaScript (Angular, React, TypeScript) and Node.js (NestJS)
+- Databases (PostgreSQL, MongoDB)
+- Redis, gRPC, Kafka
 
-<!-- - draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable -->
+### Open Source Contributions
 
-## CV
+I am deeply passionate about open-source development and enjoy creating impactful software. Currently, I am contributing to projects such as:
 
-> In progress...
+[SugarDB](https://sugardb.io/): An in-memory data store and cache built with Golang.
 
-<!-- This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+[Red components](https://github.com/thesambayo/red-components): A collection of reusable and unstyled web components.
 
-## Features
+### Uses
 
-Here are certain features of this site.
+Here are the tools and resources I rely on to stay productive and inspired:
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+**Hardware**: MacBook M3 Pro, Samsung Monitor 32", Logitech keyboard.
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev). -->
+**Editors**: Neovim, Zed, VS Code (for Angular).
+
+**Font**: Geist Mono.
+
+**Music**: Lofi Radio.
