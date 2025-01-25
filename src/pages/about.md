@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-<div class="flex gap-4 items-center">
+<div class="flex flex-col sm:flex-row gap-4 items-center">
   <img src="/assets/profile-picture.png" class="sm:size-[250px] rounded backdrop-grayscale" alt="profile image" />
   <div class="flex flex-col text-fill">
     <h2 class="mt-0">Hi, I am Samuel Adebayo</h2>
@@ -12,9 +12,9 @@ title: "About"
   </div>
 </div>
 
-I am also one of the two Golang Community Leader for Toptal, where I foster collaboration, share knowledge, and support developers in mastering Golang.
+I am also one of the two Golang Community Leader at Toptal, where I foster collaboration, share knowledge, and support developers in mastering Golang.
 
-When I'm not on the job, I enjoy reading, blogging about programming, contributing to open-source projects, watching football, and spending time with my wife watching movies.
+When I'm not on the job, I enjoy spending time with my wife, contributing to open-source projects, watching football and movies, blogging about programming.
 
 ### Tech Stack
 - CSS (SCSS, TailwindCSS)
