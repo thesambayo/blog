@@ -3,7 +3,7 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://www.samueladebayo.dev/",
   author: "Samuel Adebayo",
-  desc: "Samuel Adebayo, Software engineer. JavaScript, TypeScript, Golang.",
+  desc: "Samuel Adebayo, Software engineer. Golang, JavaScript, TypeScript .",
   title: "Samuel Adebayo",
   profile: "https://www.samueladebayo.dev/",
   ogImage: "astropaper-og.jpg",
