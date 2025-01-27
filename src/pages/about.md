@@ -17,10 +17,11 @@ I am also one of the two Golang Community Leader at Toptal, where I foster colla
 When I'm not on the job, I enjoy spending time with my wife, contributing to open-source projects, watching football and movies, blogging about programming.
 
 ### Tech Stack
-- CSS (SCSS, TailwindCSS)
-- Golang
+
 - JavaScript (Angular, React, TypeScript) and Node.js (NestJS)
+- Golang
 - Databases (PostgreSQL, MongoDB)
+- CSS (SCSS, TailwindCSS)
 - Redis, gRPC, Kafka
 
 ### Open Source Contributions
