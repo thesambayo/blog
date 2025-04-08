@@ -3,8 +3,8 @@ title: "Useful slices operations in Golang"
 author: Samuel Adebayo
 pubDatetime: 2024-01-01T06:55:12.000+01:00
 slug: how-to-concatenate-slices-in-golang
-featured: true
-draft: false
+featured: false
+draft: true
 tags:
   - golang
 description: "Using updates from Go 1.22, how you can easily concatenate slices."

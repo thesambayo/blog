@@ -3,7 +3,7 @@ title: "What is the linked list data structure?"
 author: Samuel Adebayo
 pubDatetime: 2024-02-12T14:55:12.000+01:00
 slug: what-is-the-linked-lists-data-structure
-featured: false
+featured: true
 draft: false
 tags:
   - data structures

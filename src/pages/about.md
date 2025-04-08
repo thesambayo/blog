@@ -8,7 +8,6 @@ title: "About"
   <div class="flex flex-col text-fill">
     <h2 class="mt-0">Hi, I am Samuel Adebayo</h2>
     <h4>I'm a Full-Stack Software Engineer with a passion for building scalable, user-friendly web applications and writing clean, maintainable code.</h4>
-    <a href="/apple-icon.png" target="_blank"> Check out my favicon 😊</a>
   </div>
 </div>
 
