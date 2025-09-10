@@ -26,6 +26,9 @@ html[data-theme="dark"] {
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-border: var(--border);
+
+  --font-mono: "Geist Mono", ui-sans-serif, system-ui, sans-serif;
+  /*--font-mono: "JetBrains Mono", ui-sans-serif, system-ui, sans-serif;*/
 }
 
 @layer base {

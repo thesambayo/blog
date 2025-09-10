@@ -2,6 +2,7 @@
 import Hr from "./Hr.astro";
 import IconX from "@/assets/icons/IconX.svg";
 import IconMoon from "@/assets/icons/IconMoon.svg";
+import IconRss from "@/assets/icons/IconRss.svg";
 import IconSearch from "@/assets/icons/IconSearch.svg";
 import IconArchive from "@/assets/icons/IconArchive.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
@@ -39,12 +40,24 @@ const isActive = (path: string) => {
       id="top-nav-wrap"
       class="relative flex w-full items-baseline justify-between bg-background p-4 sm:items-center sm:py-6"
     >
-      <a
-        href="/"
-        class="absolute py-1 text-2xl leading-7 font-semibold whitespace-nowrap sm:static"
-      >
-        {SITE.title}
-      </a>
+      <div class="flex items-center gap-2">
+        <a
+          href="/"
+          class="absolute py-1 text-2xl leading-7 font-semibold whitespace-nowrap sm:static"
+        >
+          {SITE.title}
+        </a>
+        <a
+          target="_blank"
+          href="/rss.xml"
+          class="inline-block"
+          aria-label="rss feed"
+          title="RSS Feed"
+        >
+          <IconRss class="size-3.5 scale-125 stroke-accent stroke-3" />
+          <span class="sr-only">RSS Feed</span>
+        </a>
+      </div>
       <nav
         id="nav-menu"
         class="flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"
