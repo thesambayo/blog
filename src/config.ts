@@ -5,7 +5,7 @@ export const SITE = {
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "Samuel Adebayo",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: true,
+  lightAndDarkMode: false,
   postPerIndex: 5,
   postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
