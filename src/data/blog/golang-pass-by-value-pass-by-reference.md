@@ -7,8 +7,6 @@ featured: false
 draft: true
 tags:
   - golang
-  - pass-by-value
-  - pass-by-reference
 description: "How arguments are received and updated in Golang functions."
 ---
 

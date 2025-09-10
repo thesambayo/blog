@@ -8,7 +8,6 @@ featured: false
 draft: false
 tags:
   - golang
-  - web-server
 description: "Creating a simple web server in Golang."
 ---
 
@@ -94,8 +93,8 @@ func main() {
 	// handler function
 	mux.HandleFunc(
 		"GET /{$}", // URL pattern
-		func(resWriter http.ResponseWriter, request *http.Request) { // handler function
-			resWriter.Write([]byte("Hello, World!"))
+		func(w http.ResponseWriter, req *http.Request) { // handler function
+			w.Write([]byte("Hello, World!"))
 		}
 	)
 
@@ -127,8 +126,8 @@ func main() {
 	// ... start server and handle error
 }
 
-func home(resWriter http.ResponseWriter, request *http.Request) {
-	resWriter.Write([]byte("Hello, World!"))
+func home(w http.ResponseWriter, req *http.Request) {
+	w.Write([]byte("Hello, World!"))
 }
 
 ```
@@ -150,17 +149,17 @@ func main() {
 	// ... start server and handle error
 }
 
-func home(resWriter http.ResponseWriter, request *http.Request) {
+func home(w http.ResponseWriter, req *http.Request) {
 	// check if the request method is GET and the URL path is "/"
-	if request.Method != http.MethodGet || request.URL.Path != "/" {
-		http.Error(resWriter, "Method Not Allowed", http.StatusMethodNotAllowed)
+	if req.Method != http.MethodGet || req.URL.Path != "/" {
+		http.Error(w, "Method Not Allowed", http.StatusMethodNotAllowed)
 		return
 	}
 
 	// do route work like get data from DB, process data, etc
 	// then write response
-	resWriter.Header().Add("Content-Type", "text/html; charset=utf-8")
-	resWriter.Write([]byte("Hello, World!"))
+	w.Header().Add("Content-Type", "text/html; charset=utf-8")
+	w.Write([]byte("Hello, World!"))
 }
 ```
 
@@ -180,13 +179,13 @@ func main() {
 	// ... start server and handle error
 }
 
-func home(resWriter http.ResponseWriter, request *http.Request) {
+func home(w http.ResponseWriter, req *http.Request) {
 	// no need for checks anymore
 
 	// do route work like get data from DB, process data, etc
 	// then write response
-	resWriter.Header().Add("Content-Type", "text/html; charset=utf-8")
-	resWriter.Write([]byte("Hello, World!"))
+	w.Header().Add("Content-Type", "text/html; charset=utf-8")
+	w.Write([]byte("Hello, World!"))
 }
 ```
 
@@ -207,7 +206,7 @@ For exact URL path matching, you end the URL with a `{$}` like `GET /{$}`. This 
 So a URL pattern like `GET /foo/{$}` will match only the URL path `/foo/` and not `/foo/2`, `/foo/bar`, `/foo/baz`, etc.
 A URL pattern like `GET /foo` will match only the URL path `/foo`.
 
-Not that `GET /foo` is quite different from `GET /foo/{$}` because of the ending `/`.
+> `GET /foo` is quite different from `GET /foo/{$}` because of the ending `/`.
 
 ---
 
