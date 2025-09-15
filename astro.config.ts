@@ -20,7 +20,7 @@ export default defineConfig({
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
-      themes: { light: "catppuccin-mocha", dark: "catppuccin-latte" },
+      themes: { light: "catppuccin-mocha", dark: "catppuccin-mocha" },
       // themes: { light: "min-light", dark: "night-owl" },
       wrap: true,
     },

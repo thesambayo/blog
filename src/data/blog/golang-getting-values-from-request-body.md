@@ -18,7 +18,7 @@ We will learn how to process and use the form data when it’s submitted to a ro
 
 To get started, you can find an example form with a go web server at the repository [here, branch for beginning of article](https://github.com/thesambayo/golang-parse-form-data). Here is a picture reference for the form:
 
-<!--![Form](@assets/images/form-parsing/form-reference.png)-->
+![Form](@/assets/images/form-parsing/form-reference.png)
 
 We are collecting information for an event. The form has fields for the full name, event date, event type, details, and interest. The form is submitted to the `/create` route via a POST method `<form action="/create" method="POST">`.
 

@@ -18,7 +18,7 @@ A linked list is a data structure that stores a sequence of elements called node
 
 A linked list can be **singly** or **doubly** linked list.
 
-<!--![intro to linked list](@assets/images/linkedlist/intro.png)-->
+![intro to linked list](@/assets/images/linkedlist/intro.png)
 > Nodes are containers that contain a value of type T and a reference to another node.
 
 A node can be represented as:
@@ -42,14 +42,14 @@ type Node[T any] struct {
 	prev *Node[T]
 }
 ```
-<!--![head and tail nodes](@assets/images/linkedlist/head-tail.png)-->
+![head and tail nodes](@/assets/images/linkedlist/head-tail.png)
 
 ## Operations in linked list
 For each operation, we will consider both singly and doubly linked lists. Some operations might seem straightforward, but the implementation can be tricky as you have to take into account the references to either the next node or the previous node.
 
 ### Retrieving values
 To get a value from a linked list, we have to traverse the list to reach that value. If we want to get the value from the second node, we have to take two steps to reach the second node. This is true for both types of linked lists.
-<!--![get-value-operation](@assets/images/linkedlist/get-value-operation.png)-->
+![get-value-operation](@/assets/images/linkedlist/get-value-operation.png)
 
 
 ### Inserting new values
@@ -62,10 +62,10 @@ Assuming we are at the point of insertion, we want to insert new node that conta
 we take `[B].next` (which is currently pointing to [C]) and point `[B].next` to `[H]`. And we take `[H].next` (which is currently nil/undefined) and point it to `[C]`.
 
 If our linked list is a doubly linked list, we also have to update the `.prev`s of all participating nodes.
-<!--![insertion-operation](@assets/images/linkedlist/insertion.png)-->
+![insertion-operation](@/assets/images/linkedlist/insertion.png)
 
 
 These actions with the `.next`s and `.prev`s are independent of the list size or size of the node or its value and thus is a **O(1) operation**.
 
 ### Deletion of values
-<!--![deletion-operation](@assets/images/linkedlist/deletion.png)-->
+![deletion-operation](@/assets/images/linkedlist/deletion.png)
