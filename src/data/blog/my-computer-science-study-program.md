@@ -29,7 +29,6 @@ The tipping point came after I had an interview which I botched horribly. It was
 
 I just want to be an excellent software engineer. I just want to be able to help build globally recognized software products. I began to find ways to learn about computer science from scratch and I came across this [story](https://www.freecodecamp.org/news/why-i-studied-full-time-for-8-months-for-a-google-interview-cc662ce9bb13), the [author's guide](https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#coding-interview-university), and also this [computer science study roadmap](https://roadmap.sh/computer-science).
 
-
 After further introspection, I made the following decisions:
 
 - I will follow this [computer science study roadmap](https://roadmap.sh/computer-science) as closely as possible to guide me.

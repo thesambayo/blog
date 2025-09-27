@@ -24,9 +24,9 @@ You're logged into your bank's website, and then you visit a malicious site that
 
 ```html
 <form action="https://yourbank.com/transfer" method="post">
-  <input type="hidden" name="amount" value="10000">
-  <input type="hidden" name="recipient" value="attacker-account">
-  <input type="submit" value="Click here for a free iPhone!">
+  <input type="hidden" name="amount" value="10000" />
+  <input type="hidden" name="recipient" value="attacker-account" />
+  <input type="submit" value="Click here for a free iPhone!" />
 </form>
 ```
 
@@ -62,11 +62,13 @@ func main() {
 ```
 
 And in your HTML template:
+
 ```html
 <form method="POST" action="/submit">
-    {{ .csrfField }} <!-- This generates a hidden input with the token -->
-    <input type="text" name="username">
-    <button type="submit">Submit</button>
+  {{ .csrfField }}
+  <!-- This generates a hidden input with the token -->
+  <input type="text" name="username" />
+  <button type="submit">Submit</button>
 </form>
 ```
 
@@ -105,6 +107,7 @@ func main() {
 `CrossOriginProtection` leverages two key browser headers:
 
 1. **`Sec-Fetch-Site`**: Tells the server the relationship between the request origin and the target
+
    - `same-origin`: Request from the same origin (always allowed)
    - `same-site`: Request from the same site but different subdomain
    - `cross-site`: Request from a different site (needs validation)
@@ -359,6 +362,7 @@ curl -X POST \
 If you're currently using `gorilla/csrf`, here's how to migrate:
 
 ### Before (gorilla/csrf):
+
 ```go
 package main
 
@@ -392,6 +396,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 ```
 
 ### After (CrossOriginProtection):
+
 ```go
 package main
 
@@ -415,6 +420,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 ```
 
 ### Key Differences:
+
 - **No secret keys** to manage or rotate
 - **No tokens** to inject into forms
 - **No cookies** for CSRF tokens
@@ -425,12 +431,12 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 
 `CrossOriginProtection` relies on modern browser headers:
 
-| Browser | Sec-Fetch-Site | Origin Header | Full Support |
-|---------|---------------|---------------|--------------|
-| Chrome 76+ | ✅ (2019) | ✅ | ✅ |
-| Firefox 90+ | ✅ (2021) | ✅ | ✅ |
-| Safari 16.4+ | ✅ (2023) | ✅ | ✅ |
-| Edge 79+ | ✅ (2020) | ✅ | ✅ |
+| Browser      | Sec-Fetch-Site | Origin Header | Full Support |
+| ------------ | -------------- | ------------- | ------------ |
+| Chrome 76+   | ✅ (2019)      | ✅            | ✅           |
+| Firefox 90+  | ✅ (2021)      | ✅            | ✅           |
+| Safari 16.4+ | ✅ (2023)      | ✅            | ✅           |
+| Edge 79+     | ✅ (2020)      | ✅            | ✅           |
 
 For older browsers, the protection falls back to Origin header checking, which has been widely supported for years.
 
@@ -511,6 +517,7 @@ Unlike token-based CSRF protection, `CrossOriginProtection` offers significant p
 While `CrossOriginProtection` is excellent, be aware of these limitations:
 
 1. **No Wildcard Origins**: You can't use patterns like `https://*.example.com`
+
    ```go
    // ❌ This won't work
    protection.AddTrustedOrigin("https://*.example.com")
@@ -589,4 +596,4 @@ If you're starting a new project in Go 1.25+, use `CrossOriginProtection`. If yo
 
 ---
 
-*Have you migrated to `CrossOriginProtection` yet? What's your experience with CSRF protection in Go? Let me know in the comments or reach out on [Twitter/X]!*
+_Have you migrated to `CrossOriginProtection` yet? What's your experience with CSRF protection in Go? Let me know in the comments or reach out on [Twitter/X]!_
