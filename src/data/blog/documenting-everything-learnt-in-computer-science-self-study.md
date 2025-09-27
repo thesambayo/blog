@@ -28,7 +28,7 @@ This table that contains the topics I'm learning and aspects of these topics I h
 | Data structures      | [Linked lists](/posts/what-is-the-linked-lists-data-structure), Queues, Stacks |
 | Sorting algorithms   | Bubble sort                                                                    |
 | Searching algorithms | Linear search, Binary search (+ 2 crystal problem)                             |
-| Design patterns      | Creational patterns(singleton, functional options)                                               |
+| Design patterns      | Creational patterns(singleton, functional options)                             |
 
 ## Go-kata-machine
 
