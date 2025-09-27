@@ -596,4 +596,4 @@ If you're starting a new project in Go 1.25+, use `CrossOriginProtection`. If yo
 
 ---
 
-_Have you migrated to `CrossOriginProtection` yet? What's your experience with CSRF protection in Go? Let me know in the comments or reach out on [Twitter/X]!_
+Have you migrated to `CrossOriginProtection` yet? What's your experience with CSRF protection in Go? Reach out on [Twitter/X](https://twitter.com/thesambayo)
