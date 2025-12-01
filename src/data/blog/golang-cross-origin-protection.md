@@ -1,8 +1,8 @@
 ---
 title: "CSRF Protection in Go 1.25: The New CrossOriginProtection API"
 author: Samuel Adebayo
-pubDatetime: 2024-09-15T10:00:00.000+01:00
-modDatetime: 2024-09-15T10:00:00.000+01:00
+pubDatetime: 2025-10-15T10:00:00.000+01:00
+modDatetime: 2025-10-15T10:00:00.000+01:00
 slug: golang-cross-origin-protection
 featured: false
 draft: false
